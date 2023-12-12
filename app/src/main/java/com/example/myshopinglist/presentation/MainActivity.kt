@@ -28,8 +28,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun showList(list: List<ShopItem>) {
         llShopList.removeAllViews()
-        for (shopItem in list ){
-            val layoutId = if (shopItem.enabled){
+        for (shopItem in list) {
+            val layoutId = if (shopItem.enabled) {
                 R.layout.item_shop_enabled
             } else {
                 R.layout.item_shop_disable
@@ -46,6 +46,5 @@ class MainActivity : AppCompatActivity() {
             }
             llShopList.addView(view)
         }
-
     }
 }
